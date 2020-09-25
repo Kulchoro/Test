@@ -1,10 +1,12 @@
 body {
   padding: 0;
-  background-color: #F8F8F8;
-  font-family: 'Roboto Regular';
+  background-color: #f8f8f8;
+  font-family: 'Roboto', sans-serif;
   color: #818587;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
 }
-
 
 .content {
   padding: 15px 0;
@@ -12,15 +14,12 @@ body {
 
 .container {
   display: inline-block;
-  width: 100%;
-  height: 690px;
+  width: 1200px;
+  height: 720px;
   box-shadow: 5px 5px 5px 5px rgb(211, 201, 201);
   border-radius: 20px;
   box-sizing: border-box;
-
 }
-
-
 
 .row:after {
   content: " ";
@@ -30,15 +29,13 @@ body {
 
 [class^="column-"] {
   float: left;
-
   box-sizing: border-box;
   padding: 0 15px;
-
-
 }
 
 .column-1 {
   width: 8.33%;
+
 }
 
 .column-2 {
@@ -47,36 +44,37 @@ body {
 
 .column-3 {
   width: 25%;
+
 }
 
 .column-4 {
   width: 33.33%;
-  text-align: center;
-  border-radius: 20px 0 0 20px;
-  background-color: #33D2FD;
-  height: 690px;
-  padding-top: 50px;
-}
-
-.column-4 .mount {
-  margin-top: 150px;
 }
 
 .column-5 {
   width: 41.66%;
+  height: 720px;
+  background-color: #33d2fd;
+  border-radius: 20px 0 0 20px;
+}
+
+.column-5 .mount {
+  position: absolute;
+  padding-top: 200px;
 }
 
 .column-6 {
   width: 50%;
+
 }
 
 .column-7 {
   width: 58.33%;
+  padding: 40px;
 }
 
 .column-8 {
   width: 66.66%;
-  background-color: #fff;
 }
 
 .column-9 {
@@ -95,30 +93,88 @@ body {
   width: 100%;
 }
 
+label {
+  display: flex;
+}
+
 input {
-  width: 285px;
-  height: 40px;
-  color: #818587;
+  background-color: #FCFCFD;
+  border: rgb(233, 230, 233) solid;
+  border-radius: 5px;
+  width: 275px;
+  padding: 10px;
+  height: 30px;
 }
 
 
-.gen img {
+.gender {
+  display: flex;
+  align-items: center;
+}
+
+.gen {
+  background-color: rgb(250, 248, 250);
+  margin: 10px;
   width: 40px;
   height: 40px;
+  padding: 15px;
+  font-size: 17px;
+  border-radius: 30px;
 }
 
-
-.gen img:hover {
-  background-color: lightgreen;
+.gen:hover {
+  background-color: #95EB75;
 }
 
-.inp {
+.gen:focus {
+  background-color: #95EB75;
+}
+
+.sub {
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-button {
+.bronze {
+  color: #FBB03B;
+}
+
+.bronze:hover {
+  background-color: #FBB03B;
+  color: white;
+  cursor: pointer
+}
+
+.silver {
+  color: silver;
+}
+
+.silver:hover {
+  cursor: pointer;
+  background-color: silver;
+  color: white;
+}
+
+.gold {
+  color: gold;
+}
+
+.gold:hover {
+  cursor: pointer;
+  background-color: gold;
+  color: white;
+}
+
+.btn button {
   text-transform: uppercase;
+  background-color: #F5F8F9;
+  border: none;
+  display: inline-block;
+  text-align: center;
   width: 135px;
   height: 40px;
+}
+
+.btn button:hover {
+  background-color: #95EB75;
 }

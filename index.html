@@ -4,46 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>Vector Form</title>
   </head>
   <body>
     <form action="form">
       <div class="container">
         <div class="row">
-          <div class="column-4">
+          <div class="column-5">
             <img src="./png/rcs1.png" alt="" class="mount" />
           </div>
-          <div class="column-8">
-            <div class="inp">
-              <label for="name">Name <input type="text" id="name" /></label>
-              <label for=""
-                >Gender
-                <div class="gen">
-                  <img src="/png/rcs2.svg" alt="" width="40" />
-                </div>
-                Male
-                <div class="gen">
-                  <img src="/png/rcs3.svg" alt="" width="40" />
-                </div>
-                Female
-              </label>
+          <div class="column-7">
+            <label for="name">Name</label>
+            <input type="name" id="name" placeholder="Luke Skywalker" />
 
-              <label for="date"
-                >Date of Birth
-                <input type="date" id="date" />
-              </label>
-              <label for="email"
-                >Email
-                <input type="email" id="email" />
-              </label>
-              <label for="sity">Sity <input type="text" id="sity" /> </label>
-              <label for="country"
-                >Country<input type="text" id="country"
-              /></label>
-              <button>Cancel</button>
-              <button>Save</button>
+            <label for="gender">Gender </label>
+            <div class="gender">
+              <img src="/png/rcs2.svg" alt="" class="gen" />
+              <p>Male</p>
+              <img src="/png/rcs3.svg" alt="" class="gen" />
+              <p>Female</p>
             </div>
+
+            <label for="date">Date of Birth</label>
+            <input type="text" id="date" placeholder="May 25, 1977" />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="lukeskywalker@galaxy.com"
+            />
+            <label for="sity">City</label>
+            <input type="text" id="sity" placeholder="Moisture Farm" />
+            <label for="country">Country</label>
+            <input type="text" id="country" placeholder="Tatooine" />
+            <label for="sub">Subscription</label>
+            <div class="sub">
+              <span class="bronze">Bronze</span>
+              <span class="silver">Silver</span>
+              <span class="gold">Gold</span>
+            </div>
+            <div class="btn"><button>Cancel</button> <button>Save</button></div>
           </div>
         </div>
       </div>
