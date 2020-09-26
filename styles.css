@@ -1,7 +1,7 @@
 body {
   padding: 0;
   background-color: #f8f8f8;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #818587;
   font-weight: lighter;
   display: flex;
@@ -35,7 +35,6 @@ body {
 
 .column-1 {
   width: 8.33%;
-
 }
 
 .column-2 {
@@ -44,7 +43,6 @@ body {
 
 .column-3 {
   width: 25%;
-
 }
 
 .column-4 {
@@ -65,12 +63,10 @@ body {
 
 .column-6 {
   width: 50%;
-
 }
 
 .column-7 {
   width: 58.33%;
-  padding: 40px;
 }
 
 .column-8 {
@@ -98,7 +94,7 @@ label {
 }
 
 input {
-  background-color: #FCFCFD;
+  background-color: #fcfcfd;
   border: rgb(233, 230, 233) solid;
   border-radius: 5px;
   width: 275px;
@@ -106,6 +102,16 @@ input {
   height: 30px;
 }
 
+.inputs-wrapper {
+  margin: 30px;
+}
+
+.input-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
 
 .gender {
   display: flex;
@@ -113,36 +119,36 @@ input {
 }
 
 .gen {
-  background-color: rgb(250, 248, 250);
+  background-color: rgb(247, 242, 247);
   margin: 10px;
   width: 40px;
   height: 40px;
   padding: 15px;
   font-size: 17px;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 .gen:hover {
-  background-color: #95EB75;
+  background-color: #95eb75;
 }
 
 .gen:focus {
-  background-color: #95EB75;
+  background-color: #95eb75;
 }
 
-.sub {
-  display: flex;
-  justify-content: space-evenly;
+.sub div {
+  margin: 30px;
+  display: inline-block;
 }
 
 .bronze {
-  color: #FBB03B;
+  color: #fbb03b;
 }
 
 .bronze:hover {
-  background-color: #FBB03B;
+  background-color: #fbb03b;
   color: white;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .silver {
@@ -164,17 +170,23 @@ input {
   background-color: gold;
   color: white;
 }
+.btn {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
 
 .btn button {
   text-transform: uppercase;
-  background-color: #F5F8F9;
+  background-color: #ebeff0;
   border: none;
   display: inline-block;
   text-align: center;
   width: 135px;
   height: 40px;
+  margin: 10px;
 }
 
 .btn button:hover {
-  background-color: #95EB75;
+  background-color: #95eb75;
 }
